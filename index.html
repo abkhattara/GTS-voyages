@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTS — Luxury Travel Architect & Experience Curator</title>
+    
+    <!-- Google Fonts: Luxury Serif & Sans-Serif Pair -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Luxury Preloader with Shutter effect -->
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="loader-brand">GTS LUXURY</span>
+            <div class="shutter-line"></div>
+            <p class="loader-coordinates">COORD: 46.2044° N, 6.1432° E</p>
+        </div>
+    </div>
+
+    <!-- Interactive Ambient Light Overlay -->
+    <div class="ambient-glow" id="ambient-overlay"></div>
+
+    <!-- Minimalist Sticky Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">GTS<span class="logo-dot">.</span></a>
+            <ul class="nav-menu">
+                <li><a href="#curations" class="nav-link">Bespoke Curations</a></li>
+                <li><a href="#manifesto" class="nav-link">The Manifesto</a></li>
+                <li><a href="#capabilities" class="nav-link">Our Pillars</a></li>
+                <li><a href="#archive" class="nav-link">The Expeditions Archive</a></li>
+                <li><a href="#inquire" class="nav-link">Inquire</a></li>
+            </ul>
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-btn" aria-label="Switch Ambient Lighting">
+                    <span class="theme-label">LIGHTING</span>
+                    <i class="fas fa-circle-half-stroke"></i>
+                </button>
+                <!-- WhatsApp Quick Action in Navbar -->
+                <a href="https://wa.me/1234567890?text=Hello%20GTS%20Concierge,%20I%20would%20like%20to%20inquire%20about%20your%20luxury%20voyages." target="_blank" class="btn btn-whatsapp-minimal" aria-label="WhatsApp GTS">
+                    <i class="fab fa-whatsapp"></i> <span>Instant Chat</span>
+                </a>
+                <a href="#inquire" class="btn btn-primary nav-cta">Initiate Voyage</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Screen (Editorial Canvas) -->
+    <section id="hero" class="hero-section">
+        <div class="editorial-container">
+            <div class="hero-coordinate-strip">
+                <span>LAT: 68.2291° N // LON: 14.5165° E</span>
+                <span class="divider-line"></span>
+                <span>DESERT & ICE COLLABORATIVE</span>
+            </div>
+            
+            <div class="hero-main-layout">
+                <div class="hero-title-area scroll-reveal-sweeping">
+                    <!-- GTS Mentioned clearly in subtitle badge -->
+                    <span class="badge"><i class="fas fa-crown"></i> Elite Destination Curators</span>
+                    
+                    <!-- High-end Title featuring GTS in the main copy -->
+                    <h1 class="editorial-hero-title">
+                        Voyages by <span class="italic-serif">GTS</span>. <br>Design Beyond <br><span class="italic-serif">Imagination.</span>
+                    </h1>
+                    
+                    <p class="hero-editorial-sub">
+                        GTS curates frictionless, highly personalized expeditions to the planet’s most isolated luxury sanctuaries, private aviation corridors, and architectural estates.
+                    </p>
+                    
+                    <!-- Call To Actions with integrated Instant WhatsApp and Direct Contact Hooks -->
+                    <div class="hero-btn-group">
+                        <a href="#curations" class="btn-editorial">Explore Ledger <i class="fas fa-arrow-right"></i></a>
+                        
+                        <!-- WhatsApp Direct in Hero -->
+                        <a href="https://wa.me/1234567890?text=Hello%20GTS%20Luxury%20Concierge,%20I%20am%20interested%20in%20planning%20a%20bespoke%20itinerary." target="_blank" class="btn-editorial whatsapp-link">
+                            Inquire via WhatsApp <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+
+                    <!-- Direct Phone, Instagram and Facebook Links integrated beautifully in Intro -->
+                    <div class="intro-direct-contacts">
+                        <span class="contact-label">DIRECT CHANNELS:</span>
+                        <div class="contact-links-row">
+                            <!-- Direct Call Link -->
+                            <a href="tel:+1234567890" class="direct-contact-item" aria-label="Call GTS">
+                                <i class="fas fa-phone-alt"></i> <span>+1 (234) 567-890</span>
+                            </a>
+                            <span class="item-separator">|</span>
+                            <!-- Instagram Page Link -->
+                            <a href="https://www.instagram.com/gts_travel_tourism/" target="_blank" class="direct-contact-item" aria-label="GTS Instagram">
+                                <i class="fab fa-instagram"></i> <span>@gts_travel_tourism</span>
+                             </a>
+                              
+                            
+                            <a href="https://www.facebook.com/gts.travel47" target="_blank" class="direct-contact-item" aria-label="GTS Facebook">
+                              <i class="fab fa-facebook-f"></i> <span>GTS Travel</span>
+                             </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-showcase-frame scroll-reveal-sweeping">
+                    <div class="interactive-image-frame">
+                        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800" alt="Lofoten Arctic Sanctuary" class="parallax-hero-img">
+                        <div class="spinning-badge-wrapper">
+                            <svg class="spinning-badge" viewBox="0 0 100 100">
+                                <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                                <text><textPath href="#circlePath">GTS LUXURY TRAVEL ARCHITECT • BESPOKE VOYAGES •</textPath></text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Dashboard Block -->
+    <section class="stats-editorial scroll-reveal-sweeping">
+        <div class="editorial-container stats-grid">
+            <div class="stat-editorial-item">
+                <span class="stat-number" data-target="14">0</span>
+                <span class="stat-meta">Years Designing Passages</span>
+            </div>
+            <div class="stat-editorial-item">
+                <span class="stat-number" data-target="92">0</span>
+                <span class="stat-meta">Isolated Outposts Mapped</span>
+            </div>
+            <div class="stat-editorial-item">
+                <span class="stat-number" data-target="110">0</span>
+                <span class="stat-meta">Custom Vessels Curated</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bespoke Curations Section (Asymmetric Project Grid with WhatsApp Destination Links) -->
+    <section id="curations" class="curations-section">
+        <div class="editorial-container">
+            <div class="section-header-editorial scroll-reveal-sweeping">
+                <span class="editorial-tag-line">THE GTS PORTFOLIO</span>
+                <h2 class="editorial-sec-title">Curated Expeditions</h2>
+                <p class="section-description-editorial">Four handpicked sanctuaries designed for absolute seclusion and tailored cultural immersion.</p>
+            </div>
+
+            <!-- Asymmetric Grid Structure -->
+            <div class="curations-editorial-grid">
+                
+                <!-- Destination 1: Lofoten, Norway -->
+                <div class="curation-item wide-item scroll-reveal-sweeping">
+                    <div class="curation-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=1200" alt="Lofoten Norway" class="curation-img">
+                        <div class="curation-coordinates">68.2291° N, 14.5165° E</div>
+                    </div>
+                    <div class="curation-meta-area">
+                        <div class="curation-text-left">
+                            <h3 class="curation-item-title">Lofoten Arctic Sanctuary</h3>
+                            <p class="curation-item-desc">A premium insulated eco-villa suspended above icy Norwegian fjords. Featuring thermal wellness, open-ocean ice plunging, and Northern Lights observation flight arrangements.</p>
+                        </div>
+                        <div class="curation-info-pill">
+                            <span class="pillar">Arctic Wilderness</span>
+                            <!-- Destination WhatsApp link with predefined custom message -->
+                            <a href="https://wa.me/1234567890?text=Hello%20GTS,%20I%20am%20interested%20in%20booking%20the%20Lofoten%20Arctic%20Sanctuary%20Voyage." target="_blank" class="btn btn-whatsapp-card">
+                                Book via WhatsApp <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 2: AlUla, Saudi Arabia -->
+                <div class="curation-item scroll-reveal-sweeping">
+                    <div class="curation-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=800" alt="AlUla Saudi Arabia" class="curation-img">
+                        <div class="curation-coordinates">26.6268° N, 37.9192° E</div>
+                    </div>
+                    <div class="curation-meta-area">
+                        <div class="curation-text-left">
+                            <h3 class="curation-item-title">AlUla Desert Mirage</h3>
+                            <p class="curation-item-desc">High-end architecture villas carved directly into sandstone formations. Sunrise balloon excursions over Hegra and custom stargazing assemblies.</p>
+                        </div>
+                        <div class="curation-info-pill">
+                            <span class="pillar">Desert Oasis</span>
+                            <!-- Destination WhatsApp link with predefined custom message -->
+                            <a href="https://wa.me/1234567890?text=Hello%20GTS,%20I%20am%20interested%20in%20booking%20the%20AlUla%20Desert%20Mirage%20Voyage." target="_blank" class="btn btn-whatsapp-card">
+                                Book via WhatsApp <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 3: Patagonia, Chile -->
+                <div class="curation-item scroll-reveal-sweeping">
+                    <div class="curation-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?q=80&w=800" alt="Patagonia Chile" class="curation-img">
+                        <div class="curation-coordinates">51.2532° S, 72.3524° W</div>
+                    </div>
+                    <div class="curation-meta-area">
+                        <div class="curation-text-left">
+                            <h3 class="curation-item-title">Patagonian Eco-Dome Refuge</h3>
+                            <p class="curation-item-desc">Bespoke premium dome compounds nestled along glacial ridges. Privately guided navigation tours through massive ice fields and horseback expeditions.</p>
+                        </div>
+                        <div class="curation-info-pill">
+                            <span class="pillar">Glacier Trekking</span>
+                            <!-- Destination WhatsApp link with predefined custom message -->
+                            <a href="https://wa.me/1234567890?text=Hello%20GTS,%20I%20am%20interested%20in%20booking%20the%20Patagonian%20Eco-Dome%20Refuge%20Voyage." target="_blank" class="btn btn-whatsapp-card">
+                                Book via WhatsApp <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Destination 4: Kyoto, Japan -->
+                <div class="curation-item wide-item scroll-reveal-sweeping">
+                    <div class="curation-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1200" alt="Kyoto Bamboo Sanctuary" class="curation-img">
+                        <div class="curation-coordinates">35.0116° N, 135.7681° E</div>
+                    </div>
+                    <div class="curation-meta-area">
+                        <div class="curation-text-left">
+                            <h3 class="curation-item-title">Kyoto Bamboo Ryokan Sanctuary</h3>
+                            <p class="curation-item-desc">A deep cultural retreat inside Arashiyama's protected forests. Enjoy tea preparation ceremonies hosted by master practitioners and exclusive zen temple meditations.</p>
+                        </div>
+                        <div class="curation-info-pill">
+                            <span class="pillar">Zen Serenity</span>
+                            <!-- Destination WhatsApp link with predefined custom message -->
+                            <a href="https://wa.me/1234567890?text=Hello%20GTS,%20I%20am%20interested%20in%20booking%20the%20Kyoto%20Bamboo%20Ryokan%20Sanctuary%20Voyage." target="_blank" class="btn btn-whatsapp-card">
+                                Book via WhatsApp <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- The Manifesto (The GTS Travel Philosophy) -->
+    <section id="manifesto" class="manifesto-section">
+        <div class="editorial-container manifesto-layout">
+            <div class="manifesto-image-block scroll-reveal-sweeping">
+                <img src="https://images.unsplash.com/photo-1527004013197-933c4bb611b3?q=80&w=800" alt="Patagonia Wilderness Peaks" class="manifesto-img">
+                <span class="image-caption">// Patagonia, Chile — Custom Dome Wilderness Outpost Expedition</span>
+            </div>
+            <div class="manifesto-text-block scroll-reveal-sweeping">
+                <span class="editorial-tag-line">THE GTS PHILOSOPHY</span>
+                <h2 class="editorial-sec-title">We craft experiences that escape the modern algorithms.</h2>
+                <div class="manifesto-paragraphs">
+                    <p>
+                        Tourism has been reduced to checklists and repetitive grids. At GTS, our approach strips away standard travel templates. We map out exclusive geographical pathways, coordinating with local elders, private aviators, and hyper-premium host estates.
+                    </p>
+                    <p>
+                        Whether establishing an eco-luxury glass dome compound directly overlooking Patagonia's glaciers or securing private tea house bookings in forbidden Kyoto temples, GTS ensures voyages are entirely non-replicable.
+                    </p>
+                </div>
+                <div class="manifesto-author-sign">
+                    <span class="author-name">GTS Concierge</span>
+                    <span class="author-title">FOUNDER, GTS VOYAGES</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Pillars & Capabilities -->
+    <section id="capabilities" class="capabilities-section">
+        <div class="editorial-container">
+            <div class="section-header-editorial scroll-reveal-sweeping">
+                <span class="editorial-tag-line">OUR COMPETENCY</span>
+                <h2 class="editorial-sec-title">Operational Architecture Pillars</h2>
+                <div class="underline-editorial"></div>
+            </div>
+
+            <div class="capabilities-grid-editorial">
+                <!-- Pillar 1 -->
+                <div class="pillar-card scroll-reveal-sweeping">
+                    <span class="pillar-num">01</span>
+                    <h3 class="pillar-title">Geographical Access Keys</h3>
+                    <p class="pillar-desc">We bypass local booking boundaries. Our global partners hold physical land access rights to remote natural reserves, allowing us to build custom temporary luxury glamping camps safely.</p>
+                </div>
+                <!-- Pillar 2 -->
+                <div class="pillar-card scroll-reveal-sweeping">
+                    <span class="pillar-num">02</span>
+                    <h3 class="pillar-title">Aviation & Marine Sourcing</h3>
+                    <p class="pillar-desc">Maintaining active direct charters with premium flight operations and private yacht operators. We ensure full aircraft and vessel inspections before passenger boardings.</p>
+                </div>
+                <!-- Pillar 3 -->
+                <div class="pillar-card scroll-reveal-sweeping">
+                    <span class="pillar-num">03</span>
+                    <h3 class="pillar-title">Extreme Passages Coordination</h3>
+                    <p class="pillar-desc">Full integration of safety networks. Every isolated polar or desert expedition is monitored via satellite relays, backed by rapid medical airlift protocols.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Expeditions Archive (Experience Timeline) -->
+    <section id="archive" class="archive-section">
+        <div class="editorial-container">
+            <div class="section-header-editorial scroll-reveal-sweeping">
+                <span class="editorial-tag-line">THE HISTORICAL RECORD</span>
+                <h2 class="editorial-sec-title">The Expeditions Archive</h2>
+                <div class="underline-editorial"></div>
+            </div>
+
+            <div class="archive-ledger">
+                <!-- Year Block 1 -->
+                <div class="ledger-row scroll-reveal-sweeping">
+                    <div class="ledger-year">2022 — PRESENT</div>
+                    <div class="ledger-details">
+                        <h4 class="ledger-position">Principal Expeditions Architect</h4>
+                        <span class="ledger-organization">GTS Voyages / Geneva & San Francisco</span>
+                        <p class="ledger-summary">Orchestrating custom routes across pristine environments, managing private aircraft logistics for elite families, and curating ultra-high-end island buyouts.</p>
+                    </div>
+                </div>
+
+                <!-- Year Block 2 -->
+                <div class="ledger-row scroll-reveal-sweeping">
+                    <div class="ledger-year">2018 — 2022</div>
+                    <div class="ledger-details">
+                        <h4 class="ledger-position">Senior Itinerary Strategist</h4>
+                        <span class="ledger-organization">Aura Expeditions / Paris Office</span>
+                        <p class="ledger-summary">Engineered multi-point overland safaris across East Africa, chartered classic sailing vessels in the Cyclades, and managed remote team operations.</p>
+                    </div>
+                </div>
+
+                <!-- Year Block 3 -->
+                <div class="ledger-row scroll-reveal-sweeping">
+                    <div class="ledger-year">2015 — 2018</div>
+                    <div class="ledger-details">
+                        <h4 class="ledger-position">Luxury Brand Advisor & Scholar</h4>
+                        <span class="ledger-organization">HEC Paris & Cornell University</span>
+                        <p class="ledger-summary">Conducted premium behavioral market research on ultra-luxury consumer behaviors. Established sustainable island hotel operational codes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Custom Inquiry Canvas -->
+    <section id="inquire" class="inquire-section">
+        <div class="editorial-container">
+            <div class="inquire-layout">
+                <div class="inquire-text scroll-reveal-sweeping">
+                    <span class="editorial-tag-line">COMMENCE JOURNEY</span>
+                    <h2 class="editorial-sec-title">Let us formulate your path.</h2>
+                    <p class="inquire-desc">
+                        Our services are strictly bespoke and reserved for clients seeking rare, custom travel architecture. Fill out our conceptual inquiry form, or dial our private concierge line directly.
+                    </p>
+                    <div class="inquire-direct-line">
+                        <span>ESTABLISHED ROUTE LINE:</span>
+                        <h3><a href="tel:+1234567890">+1 (234) 567-890</a></h3>
+                    </div>
+
+                    <!-- Direct Quick WhatsApp Booking Option -->
+                    <div class="quick-whatsapp-booking-box">
+                        <p class="whatsapp-box-title">Prefer instant planning?</p>
+                        <a href="https://wa.me/1234567890?text=Hello%20GTS,%20I%20would%20like%20to%20immediately%20begin%20planning%20a%20luxury%20itinerary%20with%20your%20concierge." target="_blank" class="btn btn-whatsapp-direct-inquire">
+                            <i class="fab fa-whatsapp"></i> Chat directly with GTS Concierge
+                        </a>
+                    </div>
+                </div>
+
+                <div class="inquire-form-container scroll-reveal-sweeping">
+                    <form id="contact-form" class="inquire-form-editorial">
+                        <!-- Custom Form Concept: Choose Sanctuary -->
+                        <div class="form-group-editorial">
+                            <label class="editorial-label">SELECT DESTINATION OF INTEREST</label>
+                            <div class="destination-selectors">
+                                <button type="button" class="dest-btn active" data-dest="Lofoten, Norway">Lofoten</button>
+                                <button type="button" class="dest-btn" data-dest="AlUla, Saudi Arabia">AlUla</button>
+                                <button type="button" class="dest-btn" data-dest="Patagonia, Chile">Patagonia</button>
+                                <button type="button" class="dest-btn" data-dest="Kyoto, Japan">Kyoto</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group-editorial">
+                            <label for="name" class="editorial-label">Your Full Name</label>
+                            <input type="text" id="name" required placeholder="Alexander Mercer">
+                        </div>
+
+                        <div class="form-group-editorial">
+                            <label for="email" class="editorial-label">Private Contact Email</label>
+                            <input type="email" id="email" required placeholder="alexander@mercerholdings.com">
+                        </div>
+
+                        <div class="form-group-editorial">
+                            <label for="message" class="editorial-label">Outline of Desires</label>
+                            <textarea id="message" rows="4" required placeholder="Describe dates, estimated travelers, and accommodation style requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn-editorial">
+                            <span>Submit Formal Inquiry</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                        <div class="form-feedback hidden"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial Footer -->
+    <footer class="footer-editorial">
+        <div class="editorial-container">
+            <div class="footer-top-editorial">
+                <span class="footer-logo">GTS VOYAGES</span>
+                <div class="footer-socials-editorial">
+                    <a href="https://www.instagram.com/gts_travel_tourism/" target="_blank" class="f-social" aria-label="GTS Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/gts.travel47" target="_blank" class="f-social" aria-label="GTS Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://wa.me/1234567890?text=Hello%20GTS,%20I%20contacted%20you%20from%20your%20website." target="_blank" class="f-social" aria-label="GTS WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom-editorial">
+                <p>&copy; 2026 GTS Voyages. Designed for Elite Explorers.</p>
+                <p>Coordinates: 46.2044° N, 6.1432° E // All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top floating indicator -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Takeoff to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
