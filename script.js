@@ -284,15 +284,28 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1800);
         });
     }
-});
-// GTS Travel Automated Photo Slideshow Runner (Self-Healing)
+});// GTS Travel Automated Photo Slideshow Runner (Self-Healing & Auto-Detection)
 document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.slideshow-container .slide');
     if (slides.length === 0) return;
     
+    // كود ذكي لمعالجة وحل مشكلة الامتداد المزدوج تلقائياً
+    slides.forEach(img => {
+        img.addEventListener('error', function handleError() {
+            let currentSrc = this.src;
+            if (currentSrc.includes('.jpg.jpg')) {
+                // إذا فشلت .jpg.jpg جرب .jpg مباشرة
+                this.src = currentSrc.replace('.jpg.jpg', '.jpg');
+            } else if (currentSrc.includes('.jpg') && !currentSrc.includes('.jpg.jpg')) {
+                // إذا فشلت .jpg جرب .jpg.jpg مكررة
+                this.src = currentSrc.replace('.jpg', '.jpg.jpg');
+            }
+            // إزالة المستمع لتجنب الدخول في حلقة مفرغة
+            this.removeEventListener('error', handleError);
+        });
+    });
+
     let currentSlide = 0;
-    
-    // إظهار الصورة الأولى فوراً
     slides[0].classList.add('active');
     
     setInterval(() => {
