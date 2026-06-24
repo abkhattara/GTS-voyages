@@ -285,12 +285,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-// GTS Travel Automated Photo Slideshow Runner
+// GTS Travel Automated Photo Slideshow Runner (Self-Healing)
 document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.slideshow-container .slide');
     if (slides.length === 0) return;
     
     let currentSlide = 0;
+    
+    // إظهار الصورة الأولى فوراً
+    slides[0].classList.add('active');
+    
     setInterval(() => {
         slides[currentSlide].classList.remove('active');
         currentSlide = (currentSlide + 1) % slides.length;
