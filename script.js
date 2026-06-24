@@ -285,3 +285,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+// GTS Travel Automated Photo Slideshow Runner
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.slideshow-container .slide');
+    if (slides.length === 0) return;
+    
+    let currentSlide = 0;
+    setInterval(() => {
+        slides[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].classList.add('active');
+    }, 4000);
+});

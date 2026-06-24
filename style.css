@@ -149,7 +149,7 @@ button, input, textarea {
 .editorial-container {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 120px 40px;
+    padding: 180px 40px; /* فراغ واسع ومريح جداً بين الأقسام */
 }
 
 .italic-serif {
@@ -651,7 +651,7 @@ button, input, textarea {
 .curations-editorial-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 80px 48px;
+    gap: 120px 48px; /* فراغات أوسع وأنيقة جداً بين رحلاتكم */
 }
 
 /* Span columns differently to break default structure */
@@ -1179,4 +1179,26 @@ button, input, textarea {
         grid-template-columns: 1fr;
         gap: 16px;
     }
+}
+/* GTS Cinematic Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+.slideshow-container .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: 1;
+}
+.slideshow-container .slide.active {
+    opacity: 1;
+    z-index: 2;
 }
